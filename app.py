@@ -26,7 +26,7 @@ def start_ping():
 @app.route('/rp', methods=['POST'])
 def receive_list():
     """Receive ping, print debug message, and restart after 10 mins"""
-    print("PINGED")
+    print("*****************************GOT PINGED*******************************")
     delayed_ping()  # Schedule next ping after 10 minutes
     return "Ping Received", 200
 
